@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Pecoden</title>
+    <script src="./js/main.js"></script>
+    <script class="u-script" type="text/javascript" src="./js/jquery.js" defer=""></script>
+    <link rel="stylesheet" href="./css/Bootstrap.css" media="screen">
+<link rel="stylesheet" href="./css/Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="./js/bootstrap.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_3984" data-image-width="2520" data-image-height="1418">
+      <img class="u-image u-image-contain u-image-default u-image-1" src="./img/36496528_bell_notice_alert_new_event_information_sign_or_symbol_website_icon_3d_illustration.png" alt="" data-image-width="1914" data-image-height="1638">
+      <h2 class="u-align-center u-custom-font u-font-lobster u-text u-text-default u-text-1">TeamerBank</h2>
+      <h5 class="u-align-center u-text u-text-2">simulate Bank system: with number of customers</h5>
+      <div class="u-align-center u-form u-form-1">
+
+        <div class="container">
+          
+          <img class="pngtree" id="pngtree" src="./img/—Pngtree—palestine flag transparent watercolor painted_5331285.png" width="100px" alt="logo" onclick="toggleBox()">
+          <div class="box" id="box">
+            <img class="phone" src="./img/—Pngtree—android mobile frame mockup vector_5679831.png" alt="back" width="100px">
+            <div class="content">
+              
+            <h4>Service Time</h4>
+
+              <label class="labalfrom">From</label>
+              <input id="inputfrom1" class="inputfrom">
+            
+              <label class="labalfrom">To</label>
+              <input id="inputto1" class="inputfrom">
+          
+              <div class="border">
+            <h6 class="InterArrival">InterArrival</h6>
+            <h6 class="Arrival_R">Arrival R#</h6>
+            <input placeholder="I1"  id="I1"  class="i1" >
+            <input placeholder="I2"  id="I2"  class="i2" >
+            <input placeholder="I3"  id="I3"  class="i3" >
+            <input placeholder="I4"  id="I4"  class="i4" >
+            <input placeholder="IO1" id="IO1" class="io1">
+            <input placeholder="IO2" id="IO2" class="io2">
+            <input placeholder="IO3" id="IO3" class="io3">
+            <input placeholder="IO4" id="IO4" class="io4" value="1.00" readonly>
+          </div>
+
+          </div>
+          </div>
+        </div>     
+
+        <form action="" onsubmit="show_mes_inp() ,time()" class="u-clearfix u-form-spacing-32 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+
+          <div class="u-form-group u-form-group-1" id="mainn"  >
+            <label for="text-f5fe" class="u-label">Customer</label>
+            <input type="number" id="numRows" name="numRows" value="" placeholder="Number Of Customer" id="text-f5fe" name="number-1" class="u-grey-10 u-input u-input-rectangle u-radius-50" required="required">
+          </div>
+          
+          <div class="u-align-right u-form-group u-form-submit" id="submitform" >
+            <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1">Submit</a>
+            <input type="submit" value="submit" class="u-form-control-hidden"  wfd-id="id1098">
+          </div>
+
+          <div class="u-form-send-error u-form-send-message" id="message"></div>
+          <input type="hidden" value="" name="recaptchaResponse" wfd-id="id1099">
+
+        </form>
+
+        <form action="" class="u-clearfix u-form-spacing-32 u-form-vertical u-inner-form" onsubmit="change_val_col() , addRows()">
+
+          <div id="vecter" class="u-form-email u-form-group u-form-partition-factor-2" >
+            <label for="email-bb9A" class="u-label">Service Time(A)</label>
+            <input type="number" placeholder="Service Time (A)" value="" id="servicestimeA" name="inputFieldA" class=" u-grey-10 u-input u-input-rectangle u-radius-50"  wfd-id="id1096">
+          </div>
+
+          <div id="vecter" class="u-form-group u-form-name u-form-partition-factor-2" >
+            <label for="name-bb9A" class="u-label">Service Start Time(A)</label>
+            <input type="number" placeholder="Begains Customer (A)" value="" id="servicesstartA" name="inputFieldB" class="u-grey-10 u-input u-input-rectangle u-radius-50"  wfd-id="id1097">
+          </div>
+
+          <div id="vecter" class="u-form-email u-form-group u-form-partition-factor-2 medieminput" >
+            <label for="email-bb9B" class="u-label">Service Time(B)</label>
+            <input type="number" placeholder="Service Time (B)" value="" id="servicestimeB" name="inputField1A" class=" u-grey-10 u-input u-input-rectangle u-radius-50"  wfd-id="id1096">
+          </div>
+
+          <div class="u-align-right u-form-group u-form-submit d-none"  id="sendtable">
+            <a class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1 ">Send</a>
+            <input type="submit" value="submit" class="u-form-control-hidden" fd-id="id1099">
+          </div>
+
+        </form>
+
+        <div class="u-align-right u-form-group u-form-submit d-none" id="Reloaded">
+          <button  onclick="location.reload()" class="reloadd u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1 ">Reload</button>
+        </div>
+
+      </div>
+      <div class="u-table u-table-responsive u-table-1">
+        <table class="u-table-entity u-table-entity-1" id="example">
+          <colgroup>
+            <col width="9%">
+            <col width="9.5%">
+            <col width="12%">
+            <col width="9.7%">
+            <col width="11.4%">
+            <col width="11.3%">
+            <col width="11.5%">
+            <col width="12.8%">
+            <col width="12.8%">
+            <col width="9%">
+          </colgroup>
+          <thead class="u-black u-table-header u-table-header-1">
+            <tr style="height: 45px;">
+              <th class="u-table-cell u-table-border-right">Customer</th>
+              <th class="u-table-cell u-table-border-right">Arival Rand#</th>
+              <th class="u-table-cell u-table-border-right">InterArrival Time</th>
+              <th class="u-table-cell u-table-border-right">Arival Time</th>
+              <th class="u-table-cell u-table-border-right">Service Time</th>
+              <th class="u-table-cell u-table-border-right">Service Start Time</th>
+              <th class="u-table-cell u-table-border-right">Time wait in quene</th>
+              <th class="u-table-cell u-table-border-right">Service End Time</th>
+              <th class="u-table-cell u-table-border-right">Time Spend in System</th>
+              <th class="u-table-cell u-table-border-right">Idle Time of Server</th>
+              
+            </tr>
+          </thead>
+          <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+              <tr style="height: 83px;">
+              <td class="u-table-cell">A</td>
+              <td class="u-table-cell">given</td>
+              <td class="u-table-cell">unknown</td>
+              <td class="u-table-cell">0</td>
+              <td class="u-table-cell" id="servicetime0">25</td>
+              <td class="u-table-cell" id="start0">0</td>
+              <td class="u-table-cell">0</td>
+              <td class="u-table-cell" id="end0">25</td>
+              <td class="u-table-cell" id="spend0">25</td>
+              <td class="u-table-cell" id="spend0">0</td>
+            </tr>
+            <tr style="height: 83px;">
+              <td class="u-table-cell">B</td>
+              <td class="u-table-cell">given</td>
+              <td class="u-table-cell">unknown</td>
+              <td class="u-table-cell">0</td>
+              <td class="u-table-cell" id="servicetime1">50</td>
+              <td class="u-table-cell" id="start1">25</td>
+              <td class="u-table-cell">25</td>
+              <td class="u-table-cell" id="end1">75</td>
+              <td class="u-table-cell" id="spend1">75</td>
+              <td class="u-table-cell" id="spend1">0</td>
+
+            </tr><!--
+            <tr style="height: 83px;">
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-19"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-20"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-21"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-22"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-23"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-24"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-palette-5-light-2 u-table-cell u-table-cell-25"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-palette-5-light-2 u-table-cell u-table-cell-26"></td>
+            </tr>
+            <tr style="height: 83px;">
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"></td>
+            </tr>
+            <tr style="height: 83px;">
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-37"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-38"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-39"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-40"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-41"></td>
+              <td class="u-palette-5-light-2 u-table-cell u-table-cell-42"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-palette-5-light-2 u-table-cell u-table-cell-43"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-palette-5-light-2 u-table-cell u-table-cell-44"></td>
+            </tr>
+            <tr style="height: 83px;">
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-table-cell"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"></td>
+              <td class="u-border-1 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="u-align-center u-table u-table-responsive u-table-2">
+        <table class="u-table-entity">
+          <colgroup>
+            <col width="9%">
+            <col width="9.5%">
+            <col width="12%">
+            <col width="9.7%">
+            <col width="11.4%">
+            <col width="11.3%">
+            <col width="11.5%">
+            <col width="12.8%">
+            <col width="12.8%">
+            <col width="9%">
+          </colgroup>
+          <tbody class="u-custom-font u-table-body u-text-font">
+            <tr style="height: 58px;">
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-64"> &nbsp;  Total</td>
+              <td id="totarrivalrand" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-56"></td>
+              <td id="totinterArrivaltime" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-57"></td>
+              <td id="totarrivaltime" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-58"></td>
+              <td id="totservicetime" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-59"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-60"></td>
+              <td id="tottimewaitinqueue" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-61"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-57"></td>
+              <td id="tottimespendinsystem" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-62"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-62">0</td>
+            </tr>
+            <tr style="height: 65px;">
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-64">Avarage</td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-65"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-66"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-67"></td>
+              <td id="avaservicetime" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-68"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-69"></td>
+              <td id="avatimewaitinqueue" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-70"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-table-cell u-table-cell-57"></td>
+              <td id="maxtimespendinsystem" class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-71"></td>
+              <td class="u-border-3 u-border-grey-40 u-border-no-left u-border-no-right u-palette-5-light-1 u-table-cell u-table-cell-71">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+  
+</body>
+</html>
